@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with me</title>
+    <link rel="stylesheet" href="pas.css">
+</head>
+<body>
+    <main>
+        <form id="next-trip-form">
+            <h1>Prepare Your Next Trip With Me </h1>
+            <p>plz take a moment to fill out this form </p>
+            <div id="full-name">
+                <label for="full-name">full Name:</label>
+                <input type="full-name" required id="full-name" name="full-name">
+            </div>
+
+            <div id="email">
+                <label for="email">Email:</label>
+                <input type="email" required id="email" name="email" placeholder="@gmail.com"> 
+            </div>
+
+            <div id="tel">
+                <label for="tel">Phone:</label>
+                <input type="tel" required id="tel" name="tel" placeholder="01058947616" minlength="11" maxlength="14"> 
+            </div>
+
+         <div id="gender">
+            <label>Gender:</label>    
+            <div>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+            </div>
+
+            <div>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+            </div>
+         </div>
+
+         <div class="date">
+            <label for="arrival_date">Arrival Date:</label>
+            <input type="date" id="arrival_date" name="arrival_date">
+         </div>
+
+         <div id="profile">
+            <label for="profile_picture">Profile Picture:</label>
+            <input type="file" id="profile_picture" name="profile_picture">
+         </div>
+
+         <div id="passport">
+            <label for="passport">Passport:</label>
+            <input type="file" id="passport" name="passport">
+         </div>
+
+         <div>
+            <label for="cities">Where would you like to travel</label>
+            <select name="cities" id="cities">
+            <option value=""></option>
+            <option value="cairo">Cairo</option>
+            <option value="giza">Giza</option>
+            <option value="aswan">Aswan</option>
+            <option value="sharm">Sharm</option>
+            </select>
+         </div>
+
+         <div> 
+            <label>Services that you needed</label>
+            <div>
+                <input type="checkbox" name="Services" value="Rental car">
+                <label for="Services">Rental Car</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Services" value="hotel_accommodations">
+                <label for="Services">Hotel Accommodations</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Services" value="airline_tickets">
+                <label for="Services">Airline Tickets</label>
+            </div>
+         </div>
+
+          <div>
+            <label for="travel_method">How Will You Travel</label>
+            <div>
+                <input type="radio" name="travel_method" id="by_air" value="by_air">
+                <label class="inline-label" for="by_air">By Air</label>
+            </div>
+            <div>
+                <input type="radio" name="travel_method" id="by_train" value="by_train">
+                <label class="inline-label" for="by_train">By Train</label>
+            </div>
+            <div>
+                <input type="radio" name="travel_method" id="by_bus" value="by_bus">
+                <label class="inline-label" for="by_bus">By Bus</label>
+            </div>
+            <div>
+                <input type="radio" name="travel_method" id="by_car" value="by_car">
+                <label class="inline-label" for="by_car">By Car</label>
+            </div>
+          </div>
+
+          <div>
+            <label for="message">Leave Your Message:</label>
+            <textarea  rows="4" name="message" id="message"></textarea>
+          </div>
+
+          <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+    </main>
+</body>
+</html>
